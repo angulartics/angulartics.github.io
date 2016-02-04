@@ -120,6 +120,14 @@
   <div class="page-header"><h3>Getting started</h3></div>
   <section>
     <h4>Installation</h4>
+    <p>Download Angulartics and the Angulartics plugin for your vendor. Note: All plugins list Angulartics as a dependency, so they will be downloaded together.</p>
+    <pre><code>$ bower install <strong class="highlighted">angulartics-google-analytics</strong> --save</code></pre>
+
+    <p>Load the relevant files in your applications html (or include them in your build script).</p>
+    <pre><code>&lt;script src="<strong class="highlighted">/bower_components/angulartics/dist/angulartics.min.js</strong>"&gt;&lt;/script&gt;
+&lt;script src="<strong class="highlighted">/bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js</strong>"&gt;&lt;/script&gt;
+</code></pre>
+
     <p>In your application dependencies, inject Angulartics and the Angulartics plugin for your vendor.</p>
     <pre><code>angular.module('myApp', ['<strong class="highlighted">angulartics</strong>', 'angulartics.<strong class="highlighted">google.analytics</strong>'])</code></pre>
 
