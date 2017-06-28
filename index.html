@@ -21,7 +21,7 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-10255892-8', 'luisfarzati.github.io');
+    ga('create', 'UA-10255892-8', 'angulartics.github.io');
     ga('send', 'pageview');
   </script>
 </head>
@@ -430,11 +430,6 @@
     Please feel free to write your implementation and PR'it on GitHub. It'll be most welcomed!</p>
 </section>
 
-<section id="feedback" analytics-on="scrollby" analytics-category="Scrolling" scrollby-offset="20%">
-  <div class="page-header"><h3>Feedback</h3></div>
-  <div id="disqus_thread"></div>
-  <a id="disqus_powered" href="http://disqus.com" class="dsq-brlink hidden">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
 <hr>
 
 <footer id="footer">
@@ -449,19 +444,11 @@
 <script src="js/angulartics.min.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';js.async=true;fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <script type="text/javascript">
-    $('#disqus_powered').removeClass('hidden');
-    var disqus_shortname = 'angulartics';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
     angular.module('website', ['angulartics', 'angulartics.google.analytics', 'angulartics.scroll'])
     .config(function ($analyticsProvider) {
       $analyticsProvider.firstPageview(false);
       $analyticsProvider.virtualPageviews(false);
     });
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
