@@ -208,7 +208,7 @@
       inject <code>$analytics</code> and invoke either the <code>pageTrack()</code>
       or <code>eventTrack()</code> methods.
     <pre><code>module.controller('SampleCtrl', function (<strong class="highlighted">$analytics</strong>) {
-  $analytics.<strong class="highlighted">pageTrack</strong>('<strong>/my/url</strong>');
+  $analytics.<strong class="highlighted">pageTrack</strong>('<strong>/my/url</strong>', <strong>{ title: 'title' }</strong>);
   $analytics.<strong class="highlighted">eventTrack</strong>('<strong>eventName</strong>');
   $analytics.<strong class="highlighted">eventTrack</strong>('<strong>eventName</strong>', <strong>{  category: 'category', label: 'label' }</strong>);</code></pre>
   </section>
