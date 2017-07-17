@@ -118,7 +118,7 @@
 <div class="container">
 <section id="getting-started" analytics-on="scrollby" analytics-category="Scrolling" scrollby-offset="20%">
   <div class="page-header"><h3>Getting started</h3></div>
-  <section>
+  <section id="installation">
     <h4>Installation</h4>
     <p>Download Angulartics and the Angulartics plugin for your vendor. Note: All plugins list Angulartics as a dependency, so they will be downloaded together.</p>
     <pre><code>$ bower install <strong class="highlighted">angulartics-google-analytics</strong> --save</code></pre>
@@ -162,7 +162,7 @@
   </section>
   <br>
 
-  <section>
+  <section id="inferred-values">
     <h4>Inferred values</h4>
     <p><code>analytics-on</code> always needs to be present, because it is the attribute that enables
       event tracking for the element. All other attributes will be inferred if omitted.</p>
@@ -177,7 +177,7 @@
   </section>
   <br>
 
-  <section>
+  <section id="additional-parameters">
     <h4>Additional parameters</h4>
     <p>Each vendor has its own set of tracking properties. For example, <strong>Google Analytics</strong> have
       <i>category</i> and <i>label</i>.
@@ -202,7 +202,7 @@
   </section>
   <br>
 
-  <section>
+  <section id="using-the-api">
     <h4>Using the API</h4>
     <p>In order to track pageviews and events from within your application logic,
       inject <code>$analytics</code> and invoke either the <code>pageTrack()</code>
